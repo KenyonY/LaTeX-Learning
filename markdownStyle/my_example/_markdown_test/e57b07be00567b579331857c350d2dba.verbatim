@@ -1,2 +1,0 @@
-res = [i for i in probar(range(10))]
-print(res)

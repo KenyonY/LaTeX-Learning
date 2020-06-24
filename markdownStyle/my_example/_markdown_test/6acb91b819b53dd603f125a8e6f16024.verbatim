@@ -1,5 +1,0 @@
-from pyprobar import bar, probar
-import time
-
-for idx, x in probar(range(1234), enum=True): 
-    time.sleep(0.02)

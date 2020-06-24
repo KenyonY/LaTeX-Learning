@@ -1,3 +1,0 @@
-for idx, i in enumerate(a):
-    bar(idx, N, color='1') # `color` options: '1','2','3','4','5','0','update_random'
-    time.sleep(0.01)

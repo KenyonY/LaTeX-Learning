@@ -1,2 +1,0 @@
-for i in probar(range(1234), symbol_2="o"):
-    time.sleep(0.01)

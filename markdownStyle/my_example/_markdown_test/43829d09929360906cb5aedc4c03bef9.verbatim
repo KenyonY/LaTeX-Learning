@@ -1,3 +1,0 @@
-from pyprobar.styleString import rgb_str
-    text = rgb_str("I'm green!", RGB_fore=[0,255,0])
-    print(text)
