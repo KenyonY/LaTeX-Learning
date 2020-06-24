@@ -1,0 +1,3 @@
+for idx, i in enumerate(a):
+    text = f"what you want see is {x}"
+    bar(idx, N, text=text)

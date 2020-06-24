@@ -1,0 +1,3 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{markdown}
+\markdownSetup{hybrid = true}

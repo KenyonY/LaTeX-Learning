@@ -1,0 +1,3 @@
+for idx, i in enumerate(a):
+    text = f"{v1}, frame:{idx}\n"
+    bar(idx, N, text=text)

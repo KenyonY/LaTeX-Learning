@@ -1,0 +1,5 @@
+\documentclass[UTF8]{ctexart}
+\usepackage{mypkg}
+\begin{document}
+...
+\end{document}

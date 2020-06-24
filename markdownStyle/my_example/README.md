@@ -1,18 +1,4 @@
-
-
-### My RESUME
-
-\LeTeX 简历模板
-
-http://www.latextemplates.com/
-
-https://www.overleaf.com/gallery/tagged/cv
-
-https://www.overleaf.com/latex/templates
-
 ---
-
-
 
 ### markdown风格的\LeTeX:
 
@@ -38,3 +24,24 @@ xelatex --shell-escape xxx.tex
 
 这样，我们就可以在.md文件里写LaTeX代码了哈哈哈哈哈
 
+---
+
+* 自定义包
+  如果代码中自定义的命令和环境过多，可将它们打包放入单独的.sty文件中，单独维护管理：
+
+  ```Tex
+  \ProvidesPackage{mypkg}
+  ...
+  ```
+
+  文件保持为`mypkg.sty`， 然后就可以在.tex文件里调用了：
+
+  ```tex
+  \documentclass[UTF8]{ctexart}
+  \usepackage{mypkg}
+  \begin{document}
+  ...
+  \end{document}
+  ```
+
+  
