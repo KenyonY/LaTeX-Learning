@@ -1,19 +1,27 @@
-%!TEX option=--shell-escape
 \documentclass[UTF8]{ctexart}
-
 \usepackage{mypkg}
+
 \begin{document}
+我将导入一个markdown文件里的Table:  
+\markdownInput[smartEllipses]{table1.md} 
+让其居中：
+\begin{table}[!htbp]
+\centering
+\markdownInput[smartEllipses]{table1.md}  
+\end{table}
 
-% 读入.md文件
-\markdownInput[smartEllipses]{README.md}
-
-% \begin{markdown}
-% \end{markdown}
-\begin{equation}
-\label{hahah}
-\sin(x) + \cos(b) = 1^2
-\end{equation}
-
+效果如上  
+对比直接在latex里面写：  
+\begin{table}[htbp]
+    \centering
+    \caption{three-line table}
+    \begin{tabular}{cccc}
+        \toprule  % 顶部线
+        1&2&3&4 \\ 
+        \midrule  % 中部线
+        0.1&0.2&0.3&0.4 \\
+        \bottomrule  % 底部线
+    \end{tabular}
+\end{table}
 
 \end{document}
-

@@ -1,4 +1,3 @@
----
 
 ### markdown风格的\LeTeX:
 
@@ -44,4 +43,33 @@ xelatex --shell-escape xxx.tex
   \end{document}
   ```
 
-  
+---
+
+例如，在markdown里面写一个table,如下
+
+| 1    | 2    | 3    | 5    |
+| ---- | ---- | ---- | ---- |
+| 11   | 22   | 33   | 55   |
+| 3    | 3    | 9    | 99   |
+| 5    | 7    | 9    | 9    |
+
+保存为`table1.md`
+
+然后在test.tex里面写下：
+
+```tex
+\documentclass[UTF8]{ctexart}
+\usepackage{mypkg}
+\begin{document}
+我将导入一个markdown文件里的Table:
+\markdownInput[smartEllipses]{README.md}
+效果如上
+\end{document}
+```
+
+编译：
+
+```bas
+xelatex --shell-scape test.tex
+```
+
