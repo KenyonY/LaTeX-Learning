@@ -61,9 +61,9 @@ xelatex --shell-escape xxx.tex
 \documentclass[UTF8]{ctexart}
 \usepackage{mypkg}
 \begin{document}
-我将导入一个markdown文件里的Table:
-\markdownInput[smartEllipses]{README.md}
-效果如上
+我将导入一个markdown文件里的Table:  
+\markdownInput[smartEllipses]{README.md}  
+效果如上 
 \end{document}
 ```
 

@@ -3,7 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 *.pdf
-
+_markdown*/
 # C extensions
 *.so
 
